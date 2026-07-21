@@ -1,0 +1,4 @@
+Auto-language validation: OK
+Primary Telegram key: wg_tgBaseLanguageCode
+Supported languages: ar, en, es, fa, fr, pt
+Unsupported Telegram languages fall back to app/system language, then English.

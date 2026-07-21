@@ -1,0 +1,29 @@
+Whitegram Languages v9 AutoSafe — Root Fix Report
+==================================================
+
+Removed completely:
+- Floating language circle
+- Language popup panel
+- WGLanguageOverlay source files
+- Extra UI windows and gesture recognizers
+- Manual WGSelectedLanguage preference
+- NSBundle localization hook
+- UILabel / UIButton / text-field global hooks
+- UIViewController title and viewDidAppear hooks
+- Scanning every visible application window
+
+Automatic language source:
+1. Telegram/Whitegram cached base language: wg_tgBaseLanguageCode
+2. AppleLanguages
+3. Main-bundle preferred localizations
+4. System preferred languages
+5. English fallback
+
+Crash isolation:
+- Outside Whitegram: read-only root-marker detection only
+- Inside Whitegram: exact known Texture text nodes and visible UIKit text only
+- Scope begins only after positive Whitegram root identification
+- Scope ends automatically when the root controller leaves the navigation stack
+- One exact runtime hook: _ASDisplayView.didMoveToWindow
+- No recurring timer
+- No paragraph-style injection

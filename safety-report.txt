@@ -1,0 +1,6 @@
+Scoped architecture validation: OK
+Overlay UI: removed
+Global UIKit hooks: 0
+Global controller hooks: 0
+Exact runtime hook: _ASDisplayView.didMoveToWindow only
+Mutation scope: tracked Whitegram navigation stack only

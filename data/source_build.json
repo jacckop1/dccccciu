@@ -1,0 +1,21 @@
+{
+  "bundle_id": "ph.telegra.Telegraph4",
+  "display_name": "Whitegram",
+  "short_version": "12.8",
+  "build_version": "55",
+  "framework_sha256": "b13c18355a1b3ef8c0b3c4e080965c2469150c5d0699ca19724dd33c5356d06f",
+  "dictionary_entries": 742,
+  "dictionary_entries_per_language": 742,
+  "source_language": "en",
+  "translated_languages": ["ar", "es", "fa", "fr", "pt"],
+  "english_mode": "original source strings",
+  "version": "9.0.0",
+  "language_mode": "automatic Telegram language",
+  "telegram_language_key": "wg_tgBaseLanguageCode",
+  "language_selector": "removed",
+  "overlay_window": "none",
+  "global_uikit_hooks": 0,
+  "global_controller_hooks": 0,
+  "runtime_hook": "_ASDisplayView.didMoveToWindow only",
+  "translation_scope": "tracked Whitegram navigation stack only"
+}
